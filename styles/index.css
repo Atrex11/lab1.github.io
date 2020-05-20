@@ -1,0 +1,140 @@
+
+html{
+   
+    background: rgb(254, 193, 105) /* Green background with 30% opacity */
+    
+}  
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.BGI {
+
+    background: url(../images/WebsiteUIExample.png) no-repeat center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 5px solid black;
+    
+}
+.container {
+    height: 200px;
+    position: relative;
+  }
+
+.Submit {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: darkcyan;  /* yellow */
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    border-left:6px solid crimson;
+
+  }
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+  margin:  0 1% 0 1%;
+  border-radius: 5px;
+}
+
+/* Middle column */
+.column.middle {
+  width: 46%;
+  overflow-y:scroll;
+  overflow-x:hidden ;
+  border-radius: 5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+    margin-top: 30px;
+    background-color: rgb(248, 163, 92);
+    padding: 10px;
+    text-align: center;
+}
+.question{
+    margin-top: 30px;
+    padding: 10px;
+    border-left:6px solid crimson;
+    background-color: darkcyan;
+    border-radius: 5px;
+    overflow: hidden;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
